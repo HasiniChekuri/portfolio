@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Hasini</title>
+    <link rel="stylesheet" href ="styles.css">
+    <script src="https://kit.fontawesome.com/cfe427bc97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    <div class="header-text">
+        <p>Student</p>
+        <h2>Hi, I'm <span>Hasini Chekuri</span> <br> from SVECW, Bhimavaram.</h2>
+    </div>
+    </div> 
+   </div>
+   <!-- ---------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+           <div class="about-col-1">
+            <img src="images/my_picture.jpg">
+           </div>
+           <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm a Computer Science undergraduate at SVECW, Bhimavaram, aspiring to grow as a Software Development Engineer.
+                I've gained hands-on experience by working on projects, and I'm always eager to learn and grow further.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Python, Java, SQL</li>
+                    <li><span>Web Technologies</span><br>HTML, CSS, Javascript</li>
+                    <li><span>CS Fundamentals</span><br>OOPs concepts, DBMS, DSA</li>
+                    <li><span>Tools & Platforms</span><br>Github, VS Code, Google Colab</li>
+                </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+                <ul> for experience
+                    <li><span>2022 - Current</span><br>B.Tech at SVECW</li>
+                    <li><span>2020 - 2022</span><br>Intermediate at Sasi Junior College for Girls</li>
+                    <li><span>2020</span><br>Secondary Education at Sir C V Raman Public School</li>
+                </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022 - 2026</span><br>B.Tech in Computer Science and Engineering, <span>CGPA - 9.09</span><br>Shri Vishnu Engineering College for Women, Bhimavaram</li>
+                    <li><span>2020 - 2022</span><br>Intermediate, <span>Percentage - 97.8</span><br>Sasi Junior College for Girls, Velivennu</li>
+                    <li><span>2020</span><br>Secondary School Certificate, <span>Percentage - 97.8</span><br> Sir C V Raman Public School, Amalapuram</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------services----------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Interests</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I'm passionate about building responsive, clean, and modern websites using HTML, CSS, and JavaScript. I enjoy turning ideas into interactive user experiences.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <!-- <i class="fa-solid fa-brain"></i> -->
+                <h2>Machine Learning</h2>
+                <p>I enjoy applying Machine Learning to solve real-world problems. I work on building models that identify patterns, make accurate predictions, and turn data into actionable insights.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+                <i class="fa-regular fa-lightbulb"></i>
+                <h2>Tech Exploration</h2>
+                <p>I enjoy exploring different tools and technologies through small, beginner-friendly projects. It helps me stay curious and expand my understanding of how things work.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------My Work or Portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                 <img src="images/project_1.jpg" alt="Project 1">
+                 <div class="layer">
+                    <h3>Career Craft WebApp</h3>
+                    <p>A WebApp that provides a comprehensive career guidance for students and professionals with dynamic Q and A section for interactions.</p>
+                    <a href="https://github.com/HasiniChekuri/CareerCraft-WebApp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                 <img src="images/project_2.jpg" alt="Project 2">
+                 <div class="layer">
+                    <h3>Amazon Review Sentiment Analysis</h3>
+                    <p>A Tool that scrapes Amazon reviews from a product URL and analyzes sentiment as positive, negative, or neutral with pie chart visualization.</p>
+                    <a href="https://github.com/HasiniChekuri/Credit-Card-Fraud-Detection"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                 <img src="images/project_3.png" alt="Project 3">
+                 <div class="layer">
+                    <h3>SafeDrive</h3>
+                    <p>A computer vision project that detects driver drowsiness and yawning using facial landmarks to promote road safety.</p>
+                    <a href="https://github.com/HasiniChekuri/SafeDrive"><i class="fa-solid fa-up-right-from-square"></i></a>
+                 </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------contact------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+
+                <p><i class="fa-solid fa-paper-plane"></i>hasinivarma743@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9676433455</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/hasini._.varma?igsh=bGNrM2F5OGcyZ25n"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Hasini_Varma_?t=ZH-m8oo5xOW90QLLAF3b2w&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/HasiniChekuri"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Hasini Chekuri.</i></p>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzRTDWOw0mmkpg3wGQ6Vje5C2Ym5eyU42sjq4A3w2FLYXYbCLmbmeUv3XgKXZpfkwQIkw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully" 
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
