@@ -323,22 +323,13 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width:600px){
-    /* #header{
+    #header{
         background-image: url(images/phone_picture.png);
     }
     .header-text{
         margin-top: 120%;
         font-size: 16px;
-    } */
-    #header {
-    height: 85vh; /* smaller header height on mobile */
-    background-image: url(images/phone_picture.png);
-}
-.header-text {
-    margin-top: 60%;
-    font-size: 16px;
-}
-
+    }
     .header-text h1{
         font-size: 28px;
     }
@@ -382,9 +373,6 @@ nav .fa-solid{
         margin-top: 8px; 
         /* modified */
     }
-    #about{
-    padding: 50px 0;
-}
     .tab-links{
         font-size: 17px;
         margin-right: 20px;
